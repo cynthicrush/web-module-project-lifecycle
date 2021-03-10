@@ -1,8 +1,9 @@
 import React from 'react';
-
+import Followers from './Follower'
 
 function GithubInfo(props) {
-    const { login, name, company, location } = props.userInfo;
+    const { login, name, company, location, followers } = props.userInfo;
+
     return(
         <div className='infos'>
             <div className='info'>
@@ -17,7 +18,16 @@ function GithubInfo(props) {
             <div className='info'>
                 Location: {location}
             </div>
-            
+            <div className='info'>
+                Followers: {
+               followers.map(follower => {
+                    return (
+                        <Followers key={follower.id} follower={follower} />
+                    )
+                })
+            }
+            </div>
+
             
         </div>
     )
