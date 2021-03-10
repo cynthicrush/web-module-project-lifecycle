@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+}
+.user-card {
+  border: 2px solid rgb(12, 169, 12);
+  background-color: lightgreen;
+  border-radius: 7px;
+  margin: 27px 120px;
+  padding-bottom: 13px;
+}
+h2 {
+  font-size: 50px;
+  margin: 27px auto;
+}
+h3 {
+  font-size: 27px;
+  margin: 20px auto;
+}
+.info {
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+
